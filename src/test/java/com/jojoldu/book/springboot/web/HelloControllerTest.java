@@ -12,6 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 // Junit4에서 테스트 실행기를 지정. SpringRunner를 사용하여 Spring Context를 로드하고, 필요한 빈을 주입하며 테스트를 실행
+// 스프링 부트 테스트와 Junit 사이에 연결자 역할을 수행
 @RunWith(SpringRunner.class)
 
 // SpringBoot의 테스트 어노테이션, 컨트롤러 레이어만 테스트할 때 실행.
@@ -22,7 +23,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 // 클래스 선언
 public class HelloControllerTest {
     
-    // Spring이 MockMvc객체를 자동으로 주입
+    // Spring이 MockMvc객체(Bean)를 자동으로 주입
     // MockMvc 컨트롤러의 요청과 응답을 테스트 할 수 있는 가짜 MVC 환경을 제공
     @Autowired
     // MockMvc 객체를 통해 HTTP 요청을 가상으로 보내고, 응답을 검증하는 데 사용
