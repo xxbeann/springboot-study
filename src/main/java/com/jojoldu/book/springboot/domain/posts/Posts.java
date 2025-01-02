@@ -29,7 +29,8 @@ public class Posts {
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
-
+    
+    // null 값 가능이 기본 옵션
     private String author;
 
     // 롬복의 빌더
