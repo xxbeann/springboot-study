@@ -25,7 +25,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.22'
 }
 
-/*
-tasks.named('test') {
-    useJUnitPlatform()
-}*/
+// Junit5시 사용
+//tasks.named('test') {
+//    useJUnitPlatform()
+//}
